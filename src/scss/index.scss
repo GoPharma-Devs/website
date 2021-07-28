@@ -1,21 +1,37 @@
 @import "libs/mixins";
-$app1:#4b0a59;
+@import "libs/type";
+$app1: #4b0a59;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color:$app1 ;
+  //background-color:$app1 ;
 }
-section{
-  display:flex;
+section {
+  display: flex;
   align-items: center;
   min-height: 100vh;
   height: auto !important;
   justify-content: center;
   align-items: center;
 }
-.contenedor{
+.contenedor {
   max-width: 1180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
 
+.logo-hero {
+  padding: 2rem;
+  width:100% ;
+  max-width: 390px;
+}
+.hero {
+  background-image: url("../assets/bgHero.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
