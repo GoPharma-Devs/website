@@ -1,0 +1,21 @@
+@import "libs/mixins";
+$app1:#4b0a59;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:$app1 ;
+}
+section{
+  display:flex;
+  align-items: center;
+  min-height: 100vh;
+  height: auto !important;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor{
+  max-width: 1180px;
+
+}
