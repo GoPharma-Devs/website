@@ -1,6 +1,6 @@
 @import "libs/mixins";
 @import "libs/type";
-$app1: #4b0a59;
+$app1: #533278 !important;
 
 * {
   margin: 0;
@@ -28,12 +28,63 @@ section {
 
 .logo-hero {
   padding: 2rem;
-  width:100% ;
-  max-width: 390px;
+  box-shadow: #2d0d52;
+  max-width: 500px;
+  opacity: 1 !important;
 }
 .hero {
+  position: relative;
+  z-index: 1;
+  
+ // background-image: url("../assets/bgHero.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tsparticles{
+ height:100vh;
+  z-index: 0;
+  background: radial-gradient(ellipse at top, #6c0cda, #4b1886,transparent),
+            radial-gradient(circle at center, #6c07e0f6, #6d0a868e,#4c03c28e),
+            radial-gradient(ellipse at left, #5006a5, #2b0853a1, #35204d8f),
+            radial-gradient(ellipse at right, #4f168b, transparent);
+            background-color: #3d1a75;
+          //background-image: url("../assets/bgHero.jpeg");
+            -webkit-animation: 1s ease 0s normal forwards 1 fadein;
+            animation: 1s ease 0s normal forwards 1 fadein;
+}
+
+.background-a{
+  z-index: 0;
+  position:absolute;
+  opacity:1;
+}
+
+@keyframes fadein{
+  0% { opacity:0; }
+  77% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+  0% { opacity:0; }
+  77% { opacity:0; }
+  100% { opacity:1; }
+}
+
+.about{
   background-image: url("../assets/bgHero.jpeg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.btn{
+  min-width:180px;
+  padding:1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+
 }
