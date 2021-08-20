@@ -9,9 +9,11 @@ function Home() {
         <img
         className="logo-hero"
             src={Logo}
-            alt="Somos una agencia de CONSULTORÍA, MKT- MEDIA especializada en el mercado PHARMA y el sector SALUD."
+            alt="Go-pharma, MKT MEDIA especializada en el mercado PHARMA y el sector SALUD."
           />
-            
+            <h1>
+LA AGENCIA QUE VA CONTIGO
+</h1>
         </div>
       </section>
     </React.Fragment>
