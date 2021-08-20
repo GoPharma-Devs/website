@@ -1,12 +1,12 @@
-import React,{useState} from "react";
+import React from "react";
 
 import Particles from "react-tsparticles";
 
-import Logo from "../assets/GoPharmaWhite.svg";
+//import Logo from "../assets/GoPharmaWhite.svg";
 import Astronauta from "../assets/astronauta.png"
 function Home() {
 
-  const [count, setCount] = useState(0.2);
+  
 
   return (
     <React.Fragment>
