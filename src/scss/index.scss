@@ -24,6 +24,18 @@ section {
   flex-flow: column;
   padding: 1rem;
   text-align: center;
+  max-width: 1180px;
+  margin: auto;
+  &-hero{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-flow: row;
+    width: 100%;
+    max-width: 1180px;
+  margin: auto;
+  border: 1px solid #ddd;
+  }
 }
 
 .logo-hero {
@@ -35,21 +47,15 @@ section {
 .hero {
   position: relative;
   z-index: 1;
-  
- // background-image: url("../assets/bgHero.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+ 
 }
 
 #tsparticles{
  height:100vh;
   z-index: 0;
-  background: radial-gradient(ellipse at top, #6c0cda, #4b1886,transparent),
-            radial-gradient(circle at center, #6c07e0f6, #6d0a868e,#4c03c28e),
-            radial-gradient(ellipse at left, #5006a5, #2b0853a1, #35204d8f),
-            radial-gradient(ellipse at right, #4f168b, transparent);
-            background-color: #3d1a75;
+  
+             
+  background: linear-gradient(#392155, #623b8f, #4a1f7a);
           //background-image: url("../assets/bgHero.jpeg");
             -webkit-animation: 1s ease 0s normal forwards 1 fadein;
             animation: 1s ease 0s normal forwards 1 fadein;

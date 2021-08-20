@@ -1,8 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
+
 import Particles from "react-tsparticles";
 
 import Logo from "../assets/GoPharmaWhite.svg";
+import Astronauta from "../assets/astronauta.png"
 function Home() {
+
+  const [count, setCount] = useState(0.2);
+
   return (
     <React.Fragment>
      <section className="background-a">
@@ -67,10 +72,10 @@ function Home() {
             },
             opacity: {
               value: 1,
-              random: false,
+              random: true,
               animation: {
-                enable: false,
-                speed: 3,
+                enable: true,
+                speed: 0.3,
                 minimumValue: 0.1,
                 sync: false,
               },
@@ -81,7 +86,7 @@ function Home() {
             links: {
               enable: false,
               distance: 100,
-              color: "#ffffff",
+              color: "#ffffff88",
               opacity: 0.5,
               width: 1,
             },
@@ -91,9 +96,9 @@ function Home() {
                 offset: 0,
               },
               enable: true,
-              speed: 0.4,
+              speed: 0.3,
               direction: "left",
-              random: false,
+              random: true,
               straight: false,
               outModes: {
                 default: "out",
@@ -155,15 +160,21 @@ function Home() {
       </Particles>
      </section>
       <section className="hero">
-        <div className="contenedor">
-          <img
+        <div className="contenedor-hero">
+         
+         <div className="texto">
+        <h1>GO PHARMA,
+LA AGENCIA QUE VA CONTIGO
+</h1>
+         <button>ACCEDER</button>
+         </div>
+         <img
             className="logo-hero"
-            src={Logo}
+            src={Astronauta}
             alt="Go-pharma, MKT MEDIA especializada en el mercado PHARMA y el sector SALUD."
           />
-          <h1>LA AGENCIA QUE VA CONTIGO</h1>
-          <button className="btn">button</button>
         </div>
+      
       </section>
 
       <section className="about">
